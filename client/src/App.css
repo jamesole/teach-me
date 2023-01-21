@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+
+.nav {
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    margin-left: 15px;
+    width: 200px;
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+}
+
+.brand > svg {
+    transform: scale(1.4);
+    padding-right: 5px;
+}
+
+#icon {
+    margin-right: 15px;
+    transform: scale(1.3);
+}
+
+body {
+    background: linear-gradient(to right, #434343 0%, black 100%);
+    overflow: hidden;
+}
+
+.search {
+    height: 350px;
+    width: 500px;
+    background-color: lightblue;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+}
+
+.search > form {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: center;
+}
+
+.search > form > input {
+    height: 40px;
+    font-size: 18px;
+    padding-left: 7.5px;
+    padding-right: 5px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    border: 1px solid white;
+    border-right: none;
+    width: 420px;
+    background-color: transparent;
+    color: white;
+}
+
+.search > form > input:focus {
+    outline: none;
+}
+
+.search > form > button {
+    border: 1px solid white;
+    border-left: none;
+    height: 47px;
+    width: 50px;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
+    background-color: transparent;
+    color: white;
+}
+
+.search > form > button > svg {
+    transform: scale(1.3);
+    padding: 5px;
+}
+
+.search > form > button > svg:hover, .search > form > button > svg:active {
+    transform: scale(1.4);
+    cursor: pointer;
+}
+
+.answer {
+    width: 470px;
+    height: fit-content;
+    max-height: 200px;
+    overflow: scroll;
+    background-color: white;
+    opacity: 0.8;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.loader {
+    margin-top: 30px;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid black; 
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
